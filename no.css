@@ -1,0 +1,143 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    background: url("rps-bg.jpg") no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.score
+{
+    width: 40%;
+    margin: 30px auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: 2px solid white;
+}
+.btn-trigger{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 99;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-trigger h1{
+    font-size: 3rem;
+    color: white;
+    font-family: 'Handlee', cursive;
+    margin-bottom: 20px;
+}
+.btn-start{
+    padding: 15px 25px;
+    background: black;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    transition: .6s ease;
+}
+
+.btn-start:hover{
+    background-color: white;
+    color: black;
+}
+
+.btn-pictures{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn-pictures section
+{
+    border: 2px solid black;
+    width: 140px;
+    height: 140px;
+    /* border-radius: 10%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.radius-trigger
+{
+    border-radius: 50%;
+}
+.btn-pictures section:hover{background: red;}
+.imgs
+{
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    pointer-events: none;
+}
+
+.score section 
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.labels{
+    width: 30%;
+    margin: auto;
+}
+
+.user-choice
+{
+    display: flex;
+    width: 30%;
+    margin: 20px auto;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.sect h2{text-transform: uppercase; color: rgb(236, 252, 222)}
+.sect p{font-size: 1.3rem;}
+
+.labels section
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.final-message
+{
+    text-align: center;
+    width: 100%;
+}
+.final-message h1{
+    text-shadow:-1px 1px black;
+}
+
+.bg1
+{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(to bottom,rgba(196, 63, 230, 0.8), rgba(32, 78, 177, 0.8));
+}
